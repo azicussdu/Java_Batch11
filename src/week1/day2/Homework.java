@@ -33,6 +33,9 @@ public class Homework {
         // System.out.println("+----------------+------------------+----------------+");
         // System.out.println("|     Morning    |    Afternoon     |     Evening    |");
         // System.out.println("+----------------+------------------+------------ ---+");
+
+
+
     }
 }
 

@@ -28,5 +28,23 @@ public class TestPrint {
 
         // System.out.println("one\ntwo");
 
+        // -------------------- Comments ---------------------
+
+        // this is single-line comment
+
+        /*
+            this is my
+            multiple-line comment
+            just want you to see this
+         */
+
     }
 }
+
+
+
+
+
+
+
+
