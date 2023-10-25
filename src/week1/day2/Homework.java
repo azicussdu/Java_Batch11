@@ -13,6 +13,6 @@ public class Homework {
         // System.out.println("System.out.print(\"C\\\\:Program Files\\\\VS2005\\n\");");
 
         // Task #4 solution
-
+        // System.out.println();
     }
 }
