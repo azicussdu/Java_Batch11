@@ -1,6 +1,6 @@
 package week1.day3;
 
-public class Practice {
+public class Homework {
     public static void main(String []args) {
 
         // Task #1. Sum of numbers
@@ -19,12 +19,29 @@ public class Practice {
 //        System.out.println("The perimeter is " + perimeter);
 //        System.out.println("The area is " + area);
 
+        // Task #3.
+//        int width = 3;
+//        int length = 4;
+//
+//        int perimeter = (width + length) * 2;
+//        int area = length * width;
+//
+//        System.out.println("The perimeter is " + perimeter);
+//        System.out.println("The area is " + area);
+
         // Task #4.
-//        int weeks = 2;
-//        int days = 3;
+//        int weeks = 3;
+//        int days = 5;
 //
 //        int totalDays = weeks * 7 + days;
 //        System.out.println("total amount of days is " + totalDays);
+
+        // Task #5.
+//        int minutes = 3;
+//        int seconds = 30;
+//
+//        int totalSeconds = minutes * 60 + seconds;
+//        System.out.println("Total amount of seconds is " + totalSeconds);
 
     }
 }
