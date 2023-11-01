@@ -47,15 +47,27 @@ public class Practice {
 //        System.out.println("result is: " + result);
 
         /*
-
         User inputs 3 words, the program should show only 1 and 3 word.
 
-        Enter 3 words: my name anna
+        Enter 3 words: my name Anna
 
-        First word is: My
-        Third word is: annA
-
+        First word is: my
+        Third word is: Anna
          */
+
+//        Scanner scan = new Scanner(System.in);
+//
+//        System.out.print("enter any 3 words: ");
+//        String sent = scan.nextLine();
+//
+//        int spacePos1 = sent.indexOf(" "); // gives back position of first space
+//        int spacePos2 = sent.lastIndexOf(" "); // gives back position of last space
+//
+//        String word1 = sent.substring(0, spacePos1); // 0 is included, but spacePos1 is NOT include
+//        String word3 = sent.substring(spacePos2+1); // start right after last space and until the end of a string
+//
+//        System.out.println("The first word: " + word1);
+//        System.out.println("The last word: " + word3);
 
     }
 }
