@@ -48,9 +48,11 @@ public class Practice {
         If the '@' sign is written before '.' sign then print true.
         Otherwise print false;
 
+        example #1:
         enter email: aza@mail.tr
         valid email = true
 
+        example #1:
         enter email: aza.mail@tr
         valid email = false
 
