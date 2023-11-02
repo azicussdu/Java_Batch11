@@ -58,5 +58,16 @@ public class Practice {
 
          */
 
+//        Scanner scan = new Scanner(System.in);
+//
+//        System.out.print("input your email: ");
+//        String email = scan.next();
+//
+//        int atPos = email.indexOf("@");
+//        int dotPos = email.indexOf(".");
+//
+//        boolean validEmail = atPos < dotPos;
+//        System.out.println("valid email = " + validEmail);
+
     }
 }
