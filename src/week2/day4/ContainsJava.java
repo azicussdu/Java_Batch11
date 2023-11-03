@@ -13,13 +13,13 @@ public class ContainsJava {
         If not, print - "Does not contain Java".
         */
 
-        Scanner scan = new Scanner(System.in);
-
-        System.out.print("Enter a sentence: ");
-        String sent = scan.nextLine(); // sent = "I am studying Java"
-
         // ---------- the 1st way: using boolean ---------
 
+//        Scanner scan = new Scanner(System.in);
+//
+//        System.out.print("Enter a sentence: ");
+//        String sent = scan.nextLine(); // sent = "I am studying Java"
+//
 //        boolean hasJava = sent.contains("Java");
 //
 //        if(hasJava == true){
@@ -32,17 +32,50 @@ public class ContainsJava {
 
         // ---------- the second way ----------------------
 
-        // sent = "I am studying C++"
+//        Scanner scan = new Scanner(System.in);
+//
+//        System.out.print("Enter a sentence: ");
+//        String sent = scan.nextLine();
+//
+//        boolean hasJava = sent.contains("Java");
+//
+//        if(hasJava){
+//            System.out.println("Contains Java");
+//        }
+//
+//        if(!hasJava){
+//            System.out.println("Does not contain Java");
+//        }
 
-        boolean hasJava = false;
+//        // ---------------- third way --------------------
+//
+//        Scanner scan = new Scanner(System.in);
+//
+//        System.out.print("Enter a sentence: ");
+//        String sent = scan.nextLine(); // sent = "I love Java"
+//
+//        if(sent.contains("Java") == true){
+//            System.out.println("Contains Java");
+//        }
+//
+//        if(sent.contains("Java") == false){
+//            System.out.println("Does not contain Java");
+//        }
 
-        if(hasJava){ // is the same as: if(hasJava == true)
-            System.out.println("Contains Java");
-        }
+        // ---------------- forth way --------------------
 
-        if(!hasJava){ // is the same as: if(hasJava == false)
-            System.out.println("Does not contain Java");
-        }
+//        Scanner scan = new Scanner(System.in);
+//
+//        System.out.print("Enter a sentence: ");
+//        String sent = scan.nextLine(); // sent = "I love C++"
+//
+//        if(sent.contains("Java")){
+//            System.out.println("Contains Java");
+//        }
+//
+//        if(!sent.contains("Java")){
+//            System.out.println("Does not contain Java");
+//        }
 
     }
 }
