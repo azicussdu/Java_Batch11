@@ -78,6 +78,11 @@ public class Practice {
 //            System.out.println("Not valid");
 //        }
 
+//        ---------------------------------------------
+
+//        int num = (2 + 2) * 3; // so if you put parantheses - then + is done first
+//        System.out.println("num = " + num);
+
         // ------------------- HOMETASK ---------------------
 
         /*
@@ -87,6 +92,19 @@ public class Practice {
 
         Try to do it with OR and AND operators together.
          */
+
+//        Scanner scan = new Scanner(System.in);
+//        System.out.print("enter a month number: ");
+//
+//        int month = scan.nextInt(); //month = 12
+//
+//        if(month == 12 || (month >= 1 && month <= 2)){
+//            System.out.println("Winter month");
+//        }
+//        else {
+//            System.out.println("Not winter month");
+//        }
+
 
         /*
         User enters two numbers.
@@ -103,6 +121,19 @@ public class Practice {
         No
          */
 
+//        Scanner scan = new Scanner(System.in);
+//        System.out.print("enter two number: ");
+//
+//        int a = scan.nextInt();
+//        int b = scan.nextInt();
+//
+//        if(a%2==0 && b%2==0 || a%2==1 && b%2==1){
+//            System.out.println("Yes");
+//        } else {
+//            System.out.println("No");
+//        }
+
+
         /*
         User inputs 3 numbers. num1, num2 and num3.
 
@@ -118,6 +149,23 @@ public class Practice {
         enter 3 numbers: 15 20 10
         No
          */
+
+//        Scanner scan = new Scanner(System.in);
+//        System.out.print("enter three number: ");
+//
+//        int num1 = scan.nextInt();
+//        int num2 = scan.nextInt();
+//        int num3 = scan.nextInt();
+//
+//        // num1=10  num2=15  num3=20  // first case (when num1 is min, num3 is max)
+//        // num1=20  num2=15  num3=10  // second case (when num3 is min, num1 is max)
+//
+//        if(num2 > num1 && num2 < num3 || num2 > num3 && num2 < num1){
+//            System.out.println("Yes");
+//        }
+//        else {
+//            System.out.println("No");
+//        }
 
     }
 }
