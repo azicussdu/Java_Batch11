@@ -1,11 +1,11 @@
 package week4.day3;
 
+import java.util.Scanner;
+
 public class Practice {
     public static void main(String[] args) {
 
         /*
-        Hometask
-
         create an array[3][4] and fill it with random numbers 1-100
         print all numbers of an array
 
@@ -13,8 +13,43 @@ public class Practice {
 
         found
         not found
-
          */
+
+        Scanner scan = new Scanner(System.in);
+
+        int[][] numbers = new int[3][4];
+
+        for(int i=0; i<numbers.length; i++){
+            for(int j=0; j<numbers[i].length; j++){
+                numbers[i][j] = (int)(Math.random() * 100 + 1);
+            }
+        }
+
+        for(int i=0; i<numbers.length; i++){
+            for(int j=0; j<numbers[i].length; j++){
+                System.out.print(numbers[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.print("enter a number: ");
+        int num = scan.nextInt();
+
+        boolean isFound = false;
+
+        for(int i=0; i<numbers.length; i++){
+            for(int j=0; j<numbers[i].length; j++){
+                if(numbers[i][j] == num){
+                    isFound = true;
+                }
+            }
+        }
+
+        if(isFound)
+            System.out.println("found");
+        else
+            System.out.println("not found");
+
 
 
         /*
