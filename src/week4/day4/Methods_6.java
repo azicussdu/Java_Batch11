@@ -19,5 +19,8 @@ public class Methods_6 {
 
         fillWithRandom(numbers);
         printArray(numbers);
+
+//        showMaxNumber(numbers); // show the maximum value inside array
+//        showMinValue(numbers); // show the minimum value inside array
     }
 }
