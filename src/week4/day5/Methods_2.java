@@ -15,7 +15,7 @@ public class Methods_2 {
      */
 
     public static int getMax(int a, int b, int c){
-
+        return 0;
     }
 
     public static int getMax(int a, int b){
