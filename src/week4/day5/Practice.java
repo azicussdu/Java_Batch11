@@ -1,43 +1,45 @@
 package week4.day5;
 
+import java.util.Arrays;
+
 public class Practice {
 
     public static int countOdds(int... nums){
-        /*
-        this method should count how many odd numbers we have
-        inside 'nums' parameters and return the amount
-         */
-        return 0; //remove this return 0 (without it I can't save the code in github)
+        int countOdds = 0;
+        for(int i=0; i<nums.length; i++){
+            if(nums[i] % 2 == 1){
+                countOdds++;
+            }
+        }
+        return countOdds;
     }
 
     public static boolean isEven(int a){
-        /*
-        checks for value of 'a' parameter
-        if 'a' is an even number then method should return true
-        otherwise it should return false
-         */
-        return false; //remove this return false (without it I can't save the code in github)
+        return (a % 2 == 0);
+
+//        if(a % 2 == 0)
+//            return true;
+//        else
+//            return false;
     }
 
     public static int getRandom(int till){
-        /*
-        This method should generate a random number
-        between 1 and till values.
-        For example if till is equal to 100, so method
-        should return random number in range 1 and 100.
-        (you can use Math.random() here)
-         */
-        return 0; //remove this return 0 (without it I can't save the code in github)
+        int random = (int)(Math.random() * till + 1);   // 1 - till
+        return random;
     }
 
     public static void main(String[] args) {
-        // amountOfOdds should be equal to 3 here (after method call)
-        int amountOfOdds = countOdds(3, 4, 5, 5, 6);
+        // amountOfOdds should be equal to 4 here (after method call)
+//        int amountOfOdds = countOdds(3, 4, 5, 5, 6, 5, 4);
+//        System.out.println("the amount of odds are: " + amountOfOdds);
 
         // isItEven should be false here (after method call)
-        boolean isItEven = isEven(4);
+//        boolean isItEven = isEven(4);
+//        System.out.println("it is an even number result = " + isItEven);
 
         // randomNumber should be any random number between 1 and 20 (after method call)
-        int randomNumber = getRandom(20);
+        int randomNumber = getRandom(100); // 1-100
+        System.out.println("the random number is " + randomNumber);
+
     }
 }
