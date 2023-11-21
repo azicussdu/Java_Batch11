@@ -1,5 +1,8 @@
 package week5.day1;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Hometask {
     public static void main(String[] args) {
 
@@ -35,5 +38,45 @@ public class Hometask {
         [Aliye Hanna Sahin Polina Hamza] // so just Aliye was added in the beginning
          */
 
+        Scanner scan = new Scanner(System.in);
+        ArrayList<String> names = new ArrayList<>();
+
+        System.out.print("enter names one by one, to finish - enter \"exit\": ");
+
+        while(true){
+            String name = scan.next();
+            if(name.equals("exit"))
+                break;
+            else{
+                names.add(name);
+            }
+        }
+
+        System.out.print("enter name to replace: ");
+        String firstName = scan.next();
+
+        System.out.print("enter name to put instead: ");
+        String secondName = scan.next();
+
+        if(names.contains(firstName)){
+            // find index of firstName inside arraylist
+            int indexOfFirst = names.indexOf(firstName);
+            // replace it with secondName, using its index
+            names.set(indexOfFirst, secondName);
+        }
+        else{
+            names.add(0, secondName);
+        }
+
+        System.out.print("all values of names: " + names);
     }
 }
+
+
+
+
+
+
+
+
+
