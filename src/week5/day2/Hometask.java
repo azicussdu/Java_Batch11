@@ -25,8 +25,21 @@ public class Hometask {
 
         Collections.sort(list);
 
-        list.remove(0); // will remove the min value (the very first value)
-        list.remove(list.size() - 1); // will remove the max value (the last value)
+        int min = list.getFirst();  // min = 2
+        int max = list.getLast();   // max = 8
+
+        while(list.contains(min)){
+            if(list.get(0) == min)
+                list.remove(0);
+        }
+
+        // I will reverse it, so max elements are in the beginning of arraylist now
+        Collections.reverse(list);
+
+        while(list.contains(max)){
+            if(list.get(0) == max)
+                list.remove(0);
+        }
 
         System.out.println("the list is: " + list);
 
