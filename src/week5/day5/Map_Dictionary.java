@@ -49,7 +49,7 @@ public class Map_Dictionary {
                     System.out.print("enter a word in english to remove: ");
                     word = scan.next();
                     tm.remove(word);
-                    System.out.println("it was remove");
+                    System.out.println("it was removed");
                     break;
                 case 6:
                     System.out.println("bye bye");
