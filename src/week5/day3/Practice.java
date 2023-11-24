@@ -24,22 +24,54 @@ public class Practice {
 
         // -----------------------------------------------------------------
 
-//        ArrayList<String> engGrp = new ArrayList<>(Arrays.asList("Hamza", "Aliye", "Oguzhan", "Khalid"));
-//        ArrayList<String> proGrp = new ArrayList<>(Arrays.asList("Khalid", "Aliye", "Polina", "Hanna"));
+        ArrayList<String> engGrp = new ArrayList<>(Arrays.asList("Hamza", "Aliye", "Oguzhan", "Khalid"));
+        ArrayList<String> proGrp = new ArrayList<>(Arrays.asList("Khalid", "Aliye", "Polina", "Hanna"));
 
         /*
-        Hometasks: (addAll(), removeAll(), retainAll())
-
-        1) show me the students who study only programming.
-        output: Polina, Hanna
-
-        2) show me the students who study english and programming together.
-        output: Aliye, Khalid
-
         3) show me the students who study only 1 subject.
         output: Hamza, Oguzhan, Polina, Hanna
 
+         hs1 = "Hamza", "Aliye", "Oguzhan", "Khalid", "Polina", "Hanna" - add all students
+         hs2 = "Aliye", "Khalid" - find the guys who study both courses
+         from hs1 removeAll who exists in hs2
          */
+
+//        HashSet<String> hs1 = new HashSet<>();
+//        hs1.addAll(engGrp);
+//        hs1.addAll(proGrp);
+//
+//        HashSet<String> hs2 = new HashSet<>();
+//        hs2.addAll(engGrp);
+//        hs2.retainAll(proGrp);
+//
+//        hs1.removeAll(hs2);
+//
+//        System.out.println("guys who study only 1 course: " + hs1);
+
+        /*
+        2) show me the students who study english and programming together.
+        output: Aliye, Khalid
+         */
+
+//        HashSet<String> hs2 = new HashSet<>();
+//
+//        hs2.addAll(engGrp);
+//        hs2.retainAll(proGrp);
+//
+//        System.out.println("guys who study both courses: " + hs2);
+
+
+        /*
+        1) show me the students who study only programming.
+        output: Polina, Hanna
+         */
+
+//        HashSet<String> hs1 = new HashSet<>();
+//        hs1.addAll(proGrp);
+//        hs1.removeAll(engGrp);
+//
+//        System.out.println("guys who only study programming: " + hs1);
+
 
         /*
         show students who study only english
