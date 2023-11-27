@@ -27,29 +27,68 @@ public class Map_Dictionary {
             int choice = scan.nextInt();
 
             switch (choice){
-                case 1: case 2:
+                case 1:
                     System.out.print("enter a word: ");
-                    word = scan.next();
+                    word = scan.next(); // car
                     System.out.println("enter a translation: ");
-                    translation = scan.next();
+                    translation = scan.next(); // araba
                     tm.put(word, translation);
                     break;
+                case 2:
+                    System.out.print("enter a word: ");
+                    word = scan.next();
+                    System.out.println("enter a new translation: ");
+                    translation = scan.next();
+
+                    if(tm.containsValue(translation)){
+                        System.out.println("The new translation is the same as old one");
+                    }
+                    else{
+                        tm.put(word, translation);
+                    }
+
+                    break;
                 case 3:
-                    for(Map.Entry<String, String> entry : tm.entrySet()){
-                        System.out.println(entry.getKey() + " - " + entry.getValue());
+                    if(tm.isEmpty()){
+                        System.out.println("dictionary is empty");
+                    }
+                    else{
+                        for(Map.Entry<String, String> entry : tm.entrySet()){
+                            System.out.println(entry.getKey() + " - " + entry.getValue());
+                        }
                     }
                     break;
                 case 4:
                     System.out.print("enter a word in english: ");
                     word = scan.next();
-                    translation = tm.get(word);
-                    System.out.println("the translation is: " + translation);
+                    if(tm.containsKey(word)){
+                        translation = tm.get(word);
+                        System.out.println("the translation is: " + translation);
+                    }
+                    else{
+                        System.out.print("Not found in dictionary, You want to add it? yes/no");
+                        String answer = scan.next(); // user enters "yes" or "no"
+
+                        if(answer.equalsIgnoreCase("yes")){
+                            System.out.print("then enter a translation: ");
+                            translation = scan.next();
+                            tm.put(word, translation);
+                            System.out.println("It was added...");
+                        }
+                    }
+
                     break;
                 case 5:
                     System.out.print("enter a word in english to remove: ");
                     word = scan.next();
-                    tm.remove(word);
-                    System.out.println("it was removed");
+                    if(tm.containsKey(word)){
+                        tm.remove(word);
+                        System.out.println("it was removed");
+                    }
+                    else {
+                        System.out.println("Entered word is not found");
+                    }
+
                     break;
                 case 6:
                     System.out.println("bye bye");
