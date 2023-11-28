@@ -29,11 +29,11 @@ public class TestStudent {
 //        System.out.println(stud2.getStudentInfo());
 
         // forth way
-        System.out.println(stud1.toString());
+//        System.out.println(stud1.toString());
 
         // even if you don't call toString() method
         // java will automatically find it and call
-        System.out.println(stud1);
+        System.out.println(stud1); // the same as: System.out.println(stud1.toString());
 
     }
 }
