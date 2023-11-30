@@ -14,8 +14,6 @@ public class Methods_2 {
      we call: Method overloading
      */
 
-
-
     public static int getMax(int a, int b){
         if(a > b)
             return a;
