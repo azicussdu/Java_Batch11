@@ -7,4 +7,17 @@ public class Task {
 
     Test it.
      */
+
+    public static void main(String[] args) {
+
+//        Date d1 = new Date();
+//        d1.setDay(40);
+//        d1.setMonth(10);
+//        d1.setYear(-200);
+//        System.out.println(d1);
+
+        Date d2 = new Date(40, 10, -200);
+        System.out.println(d2);
+
+    }
 }
