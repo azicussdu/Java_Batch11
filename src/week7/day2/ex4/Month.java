@@ -22,8 +22,8 @@ public enum Month {
     NOVEMBER(11, 30),
     DECEMBER(12, 31);
 
-    int daysAmount; // 31, 30, 29,
-    int monthNumber; // 1,2,3 - 12
+    final int daysAmount; // 31, 30, 29,
+    final int monthNumber; // 1,2,3 - 12
     Month(int monthNumber, int daysAmount){
         this.monthNumber = monthNumber;
         this.daysAmount = daysAmount;
