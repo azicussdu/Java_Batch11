@@ -8,7 +8,7 @@ public class Student {
     public String getName(){
         return name;
     }
-    public void setName(String name){
+    public void setName(String name){ //name = "mike"
         if(name.length() < 2 || name.length() > 20){
             System.out.println("The length should be in range: 2-20");
         }
