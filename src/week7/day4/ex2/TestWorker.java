@@ -5,9 +5,14 @@ public class TestWorker {
 
         // after I create constructors
 
-//        Worker w1 = new Worker()
-
-        Tester t1 = new Tester("Mike", 43000, 5);
+//        Worker w1 = new Worker("John", 43000);
+//        System.out.println(w1);
+//
+//        Tester t1 = new Tester("Mike", 43000, 5);
+//        System.out.println(t1);
+//
+//        Developer d1 = new Developer("Ada Lovelace", 43000, Level.JUNIOR);
+//        System.out.println(d1);
 
 
         // --------------------------------------------------
