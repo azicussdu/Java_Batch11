@@ -4,6 +4,8 @@ public class HomeTask {
 
     /*
 
+    For all classes create getter/setter methods, constructors and toString methods.
+
     create a class Animal:
         fields: String name, boolean isWild
         methods:
