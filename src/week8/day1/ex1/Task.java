@@ -14,6 +14,8 @@ public class Task {
         create constructor
         create toString() - should show perimeter and area
 
+   A Square is a rectangle with equal width and length.
+
    class Square(inherits from Rectangle):
         fields: no fields (just those which it inherits from Rectangle)
         methods: Think, should you override methods or just leave as it is
