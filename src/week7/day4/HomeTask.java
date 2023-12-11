@@ -7,14 +7,14 @@ public class HomeTask {
     For all classes create getter/setter methods, constructors and toString methods.
 
     create a class Animal:
-        fields: String name, boolean isWild
+        fields: String color, boolean isWild
         methods:
             void makeSound(){ sout("making some sound") }
 
     create a class Dog: that inherits from Animal:
         fields: String breed;
         methods:
-            Override makeSound(){ sound of dog }
+            Override makeSound(){ Wuff Wuff }
 
     create a class Cat: that inherits from Animal:
         fields: boolean isLazy
@@ -25,8 +25,6 @@ public class HomeTask {
         fields: think of some field here
         methods:
             Override makeSound(){ sound of tiger }
-
-
      */
 
 }
