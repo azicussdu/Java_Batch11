@@ -12,11 +12,13 @@ public class Task {
         int yearsOfExperience;
         public double calculateSalary(){} - return salary * coefficient
             (coefficient is bigger if yearsOfExp is more)
+            // each year of experience is +10% to the salary
 
     create Manager (extends from Worker)
         int teamMembers;
         public double calculateSalary(){} - return salary * coefficient
             (coefficient is bigger if teamMembers is more)
+            // 1-5 +10% to salary, 6-10 +30% to salary, 11-more +50% to salary
 
     create enum Level {JUNIOR, MIDDLE, SENIOR}
 
