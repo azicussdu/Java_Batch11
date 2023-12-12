@@ -26,29 +26,29 @@ public class TestAnimals {
         Dog d1 = new Dog("brown", "Chihuhua");
         Cow cow1 = new Cow("white", true);
 
-        showAllInfo(c1);
-        showAllInfo(d1);
+//        showAllInfo(c1);
+//        showAllInfo(d1);
 
-//        animalsList.add(c1);
-//        animalsList.add(c2);
-//        animalsList.add(d1);
-//        animalsList.add(cow1);
-//
-//        for(Animal animal : animalsList){
-//            animal.makeSound();
-//
-//            if(animal instanceof Dog){
-//                ((Dog)animal).givePaw();
-//            }
-//            else if(animal instanceof Cat){
-//                ((Cat)animal).haveARest();
-//            }
-//
-//            /*
-//            if this current animal is a dog so please call givePaw()
-//            if this current animal is a cat so please call haveARest()
-//             */
-//        }
+        animalsList.add(c1);
+        animalsList.add(c2);
+        animalsList.add(d1);
+        animalsList.add(cow1);
+
+        for(Animal animal : animalsList){
+            animal.makeSound();
+
+            if(animal instanceof Dog){
+                ((Dog)animal).givePaw();
+            }
+            else if(animal instanceof Cat){
+                ((Cat)animal).haveARest();
+            }
+
+            /*
+            if this current animal is a dog so please call givePaw()
+            if this current animal is a cat so please call haveARest()
+             */
+        }
     }
 
     public static void showAllInfo(Animal animal){
