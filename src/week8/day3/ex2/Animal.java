@@ -12,6 +12,10 @@ public abstract class Animal {
 
     public abstract void sleep();
 
+    /*
+    add abstract void method eat(Food food);
+     */
+
     public Animal(String color){
         this.color = color;
     }
@@ -23,4 +27,8 @@ public abstract class Animal {
     public void setColor(String color) {
         this.color = color;
     }
+}
+
+enum Food{
+    GRASS, FRUITS, FISH
 }

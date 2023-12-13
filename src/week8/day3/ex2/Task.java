@@ -31,6 +31,19 @@ public class Task {
         for(Animal animal : animalList){
             animal.makeSound();
             animal.sleep();
+            // animal.eat(Food.FISH);
+            // animal.eat(Food.FRUITS);
+            // animal.eat(Food.GRASS);
+
+            /*
+            example of a Dolphin:
+                animal.eat(Food.FISH) -> ok, I eat FISH, thank you
+                animal.eat(Food.FRUITS) -> are you ok? I don't eat it
+                animal.eat(Food.GRASS) -> are you ok? I don't eat it
+
+           You can also create a Cow that eats a GRASS
+           You can also create a Monkey that eats fruits, and also eats grass
+             */
         }
 
     }
