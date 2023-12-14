@@ -25,15 +25,17 @@ public class Task {
         Cat c1 = new Cat("white", "Boby");
         Dog d1 = new Dog("black", "Pitbull");
         Dolphin dol1 = new Dolphin("gray", 3.5);
+        Monkey m1 = new Monkey("brown");
 
-        ArrayList<Animal> animalList = new ArrayList<>(Arrays.asList(c1, d1, dol1));
+        ArrayList<Animal> animalList = new ArrayList<>(Arrays.asList(c1, d1, dol1, m1));
 
         for(Animal animal : animalList){
             animal.makeSound();
             animal.sleep();
-            // animal.eat(Food.FISH);
-            // animal.eat(Food.FRUITS);
-            // animal.eat(Food.GRASS);
+            animal.eat(Food.FISH);
+            animal.eat(Food.FRUITS);
+            animal.eat(Food.BEEF);
+            System.out.println("--------------");
 
             /*
             example of a Dolphin:

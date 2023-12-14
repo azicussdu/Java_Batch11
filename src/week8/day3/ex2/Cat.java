@@ -14,6 +14,14 @@ public class Cat extends Animal{
     }
 
     @Override
+    public void eat(Food food) {
+        if(food == Food.BEEF || food == Food.FISH)
+            System.out.println("Ok, I am eating");
+        else
+            System.out.println("I do not eat " + food);
+    }
+
+    @Override
     public void makeSound() {
         System.out.println("Miew miew");
     }

@@ -1,21 +1,19 @@
 package week8.day3.ex2;
 
-public class Dolphin extends Animal{
-    private double size;
+public class Monkey extends Animal{
 
-    public Dolphin(String color, double size) {
+    public Monkey(String color) {
         super(color);
-        this.size = size;
     }
 
     @Override
     public void makeSound() {
-        System.out.println("Kikiki");
+        System.out.println("Wakaka Wakaka");
     }
 
     @Override
     public void sleep() {
-        System.out.println("no no, I don't sleep");
+        System.out.println("Ok, I am sleeping");
     }
 
     @Override
@@ -24,13 +22,5 @@ public class Dolphin extends Animal{
             System.out.println("Ok, I am eating");
         else
             System.out.println("No, I do not eat " + food);
-    }
-
-    public double getSize() {
-        return size;
-    }
-
-    public void setSize(double size) {
-        this.size = size;
     }
 }

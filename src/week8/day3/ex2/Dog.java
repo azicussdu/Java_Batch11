@@ -18,6 +18,14 @@ public class Dog extends Animal{
         System.out.println("Wuff wuff");
     }
 
+    @Override
+    public void eat(Food food) {
+        if(food == Food.BEEF)
+            System.out.println("Ok, I am eating");
+        else
+            System.out.println("I do not eat " + food);
+    }
+
     public String getBreed() {
         return breed;
     }

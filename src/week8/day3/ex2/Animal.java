@@ -12,9 +12,7 @@ public abstract class Animal {
 
     public abstract void sleep();
 
-    /*
-    add abstract void method eat(Food food);
-     */
+    public abstract void eat(Food food);
 
     public Animal(String color){
         this.color = color;
@@ -30,5 +28,5 @@ public abstract class Animal {
 }
 
 enum Food{
-    GRASS, FRUITS, FISH
+    BEEF, FRUITS, FISH,
 }
