@@ -34,11 +34,11 @@ public class Task {
         // all heros in arraylist
     }
 
-    public static void skyAttack(ArrayList<Superhero> herosList){
+//    public static void skyAttack(ArrayList<Superhero> herosList){
         //only those who can fly should attack from sky
-    }
+//    }
 
-    public static void attackWithShoot(ArrayList<Superhero> herosList){
+//    public static void attackWithShoot(ArrayList<Superhero> herosList){
         //only those who can shoot should shoot
-    }
+//    }
 }
