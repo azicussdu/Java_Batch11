@@ -22,11 +22,11 @@ public class SmartPhone {
         }
     }
 
-    public void uninstall(String appName){
+    public void uninstall(String appName){ // appName="whatsapp"
         for(App app : appList){
             if(app.getName().equalsIgnoreCase(appName)){
-                freeMemory = freeMemory + app.getSizeMb();
                 appList.remove(app);
+                freeMemory = freeMemory + app.getSizeMb();
                 System.out.println("The app: " + app.getName() + " was removed");
                 break;
             }

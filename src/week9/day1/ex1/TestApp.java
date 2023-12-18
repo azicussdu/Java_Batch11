@@ -18,9 +18,13 @@ public class TestApp {
         mySmartPhone.install(sn); // snake was not installed
         mySmartPhone.install(gc); // google was not installed
 
-        mySmartPhone.uninstall("youtube");
+        mySmartPhone.uninstall("whatsapp");
 
         mySmartPhone.install(sn);
+        mySmartPhone.install(gc); // can not install
+
+        mySmartPhone.uninstall("telegram");
+        mySmartPhone.install(gc); // finally now I can install
 
     }
 }
