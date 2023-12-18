@@ -10,4 +10,26 @@ public class SmartPhone {
         if(freeMemory >= 0)
             this.freeMemory = freeMemory;
     }
+
+    public void install(App app){
+        if(app.getSizeMb() <= freeMemory){
+            appList.add(app);
+            System.out.println("App: " + app.getName() + " is installed...");
+            freeMemory = freeMemory - app.getSizeMb();
+        }
+        else{
+            System.out.println("Sorry, no enough memory to install " + app.getName());
+        }
+    }
+
+    public void uninstall(String appName){
+        for(App app : appList){
+            if(app.getName().equalsIgnoreCase(appName)){
+                freeMemory = freeMemory + app.getSizeMb();
+                appList.remove(app);
+                System.out.println("The app: " + app.getName() + " was removed");
+                break;
+            }
+        }
+    }
 }
