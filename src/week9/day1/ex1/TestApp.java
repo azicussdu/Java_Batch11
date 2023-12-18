@@ -11,20 +11,27 @@ public class TestApp {
         Snake sn = new Snake(500); // freeMemory = 300
         GoogleCalendar gc = new GoogleCalendar(400); // error
 
-        mySmartPhone.install(yt);
         mySmartPhone.install(wh);
         mySmartPhone.install(tg);
-
-        mySmartPhone.install(sn); // snake was not installed
-        mySmartPhone.install(gc); // google was not installed
-
-        mySmartPhone.uninstall("whatsapp");
-
         mySmartPhone.install(sn);
-        mySmartPhone.install(gc); // can not install
+        mySmartPhone.install(gc);
 
-        mySmartPhone.uninstall("telegram");
-        mySmartPhone.install(gc); // finally now I can install
+        mySmartPhone.playAGame();
+
+//        mySmartPhone.install(yt);
+//        mySmartPhone.install(wh);
+//        mySmartPhone.install(tg);
+//
+//        mySmartPhone.install(sn); // snake was not installed
+//        mySmartPhone.install(gc); // google was not installed
+//
+//        mySmartPhone.uninstall("whatsapp");
+//
+//        mySmartPhone.install(sn);
+//        mySmartPhone.install(gc); // can not install
+//
+//        mySmartPhone.uninstall("telegram");
+//        mySmartPhone.install(gc); // finally now I can install
 
     }
 }
