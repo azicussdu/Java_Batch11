@@ -21,25 +21,35 @@ public class Dates_1 {
 
 //        ---------------------------------------------------
 
-        LocalDate date1 = LocalDate.now();
-        date1 = date1.minusDays(17);
+//        LocalDate date1 = LocalDate.now();
+//        date1 = date1.minusDays(17);
+//
+//        DateTimeFormatter fm1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+//        System.out.println("date in format dd/MM/yyyy = " + date1.format(fm1));
+//
+//        DateTimeFormatter fm2 = DateTimeFormatter.ofPattern("d/M/yy");
+//        System.out.println("date in format d/M/yy = " + date1.format(fm2));
+//
+//        DateTimeFormatter fm3 = DateTimeFormatter.ofPattern("EEEE dd.MM.yyyy").withLocale(Locale.of("en", "US"));
+//        System.out.println("date in format EEEE dd.MM.yyyy = " + date1.format(fm3));
+//
+//        DateTimeFormatter fm4 = DateTimeFormatter.ofPattern("EE dd.MM.yyyy").withLocale(Locale.of("en", "US"));
+//        System.out.println("date in format EE dd.MM.yyyy = " + date1.format(fm4));
+//
+//        DateTimeFormatter fm5 = DateTimeFormatter.ofPattern("MMMM EEEE dd.MM.yyyy").withLocale(Locale.of("en", "US"));
+//        System.out.println("date in format MMMM EEEE dd.MM.yyyy = " + date1.format(fm5));
+//
+//        DateTimeFormatter fm6 = DateTimeFormatter.ofPattern("MMM EEEE dd.MM.yyyy").withLocale(Locale.of("en", "US"));
+//        System.out.println("date in format MMM EEEE dd.MM.yyyy = " + date1.format(fm6));
 
-        DateTimeFormatter fm1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        System.out.println("date in format dd/MM/yyyy = " + date1.format(fm1));
-
-        DateTimeFormatter fm2 = DateTimeFormatter.ofPattern("d/M/yy");
-        System.out.println("date in format d/M/yy = " + date1.format(fm2));
-
-        DateTimeFormatter fm3 = DateTimeFormatter.ofPattern("EEEE dd.MM.yyyy").withLocale(Locale.of("en", "US"));
-        System.out.println("date in format EEEE dd.MM.yyyy = " + date1.format(fm3));
-
-        DateTimeFormatter fm4 = DateTimeFormatter.ofPattern("EE dd.MM.yyyy").withLocale(Locale.of("en", "US"));
-        System.out.println("date in format EE dd.MM.yyyy = " + date1.format(fm4));
-
-        DateTimeFormatter fm5 = DateTimeFormatter.ofPattern("MMMM EEEE dd.MM.yyyy").withLocale(Locale.of("en", "US"));
-        System.out.println("date in format MMMM EEEE dd.MM.yyyy = " + date1.format(fm5));
 
 
+        // printing locales from Java
+        Locale[] arr = Locale.getAvailableLocales();
+
+        for(Locale loc : arr){
+            System.out.println(loc.getLanguage() + " - " + loc.getCountry());
+        }
 
     }
 }
