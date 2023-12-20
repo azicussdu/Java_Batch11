@@ -46,6 +46,10 @@ public class Time {
         }
     }
 
+    public void minusHours(int substractedHours){
+        // do it at home
+    }
+
     public int getHour() {
         return hour;
     }
