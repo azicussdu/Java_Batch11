@@ -1,5 +1,8 @@
 package week9.day3;
 
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
 public class Time {
     private int hour;
     private int minute;
@@ -13,10 +16,34 @@ public class Time {
 
     public void showIn12Format(){ // 22:30:45 -> should print 10:30:45 PM
 
+        if(hour < 12){ // then AM time
+            if(hour == 0)
+                System.out.println(12+":"+minute+":"+second+ " am");
+            else
+                System.out.println(hour+":"+minute+":"+second+ " am");
+        }
+        else{ // then PM time
+            if(hour == 12)
+                System.out.println(hour+":"+minute+":"+second+ " pm");
+            else // hour > 12  if 22:30 -> 10:30 pm
+                System.out.println((hour-12)+":"+minute+":"+second+ " pm");
+        }
+
+//        LocalTime time = LocalTime.of(hour, minute, second);
+//        DateTimeFormatter fm1 = DateTimeFormatter.ofPattern("hh:mm:ss a");
+//        System.out.println(time.format(fm1));
     }
 
     public void showIn24Format(){ // 22:30:45 -> should print 22:30:45
+        System.out.println(hour+":"+minute+":"+second);
+    }
 
+    public void addHours(int addedHours){
+        int newHour = hour + addedHours;
+
+        if(newHour > 23){
+            hour = newHour % 24;
+        }
     }
 
     public int getHour() {
