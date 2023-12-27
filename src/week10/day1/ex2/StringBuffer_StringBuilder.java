@@ -1,6 +1,12 @@
 package week10.day1.ex2;
 
-import java.sql.SQLOutput;
+/*
+
+String -        Immutable - Thread-safe     -  Slow if you frequently change it (740 millis in our example)
+StringBuffer -  Mutable   - Thread-safe     -  Fast (4-6 millis to do 100 000 changes)
+StringBuilder - Mutable   - not thread safe -  Fastest (1 millis to do 100 000 change)
+
+ */
 
 public class StringBuffer_StringBuilder {
     public static void main(String[] args) {
@@ -40,7 +46,11 @@ public class StringBuffer_StringBuilder {
         The difference is that StringBuffer is mutable. When you change the value, it doesn't
         create a new value in memory. It is convenient to work with multiple threads.
 
+        StringBuilder is the same as StringBuffer. The difference:
 
+        StringBuffer - is thread-safe (better when you work with multiple processes)
+        StringBuilder - is not thread-safe (better to use when you have only 1 process running),
+        that's why StringBuilder is quite faster than StringBuffer.
          */
 
         StringBuffer sb = new StringBuffer("hi");
