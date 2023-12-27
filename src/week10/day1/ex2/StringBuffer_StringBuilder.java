@@ -35,6 +35,14 @@ public class StringBuffer_StringBuilder {
 
         // -----------------------------------------
 
+        /*
+        StringBuffer is a class to work with String values.
+        The difference is that StringBuffer is mutable. When you change the value, it doesn't
+        create a new value in memory. It is convenient to work with multiple threads.
+
+
+         */
+
         StringBuffer sb = new StringBuffer("hi");
 
         long startTime = System.currentTimeMillis();
@@ -47,7 +55,19 @@ public class StringBuffer_StringBuilder {
 
         System.out.println("for StringBuffer it takes " + (endTime - startTime) + " milliseconds");
 
-        System.out.println(sb);
+        // ---------------------------------------------------
+
+        StringBuilder sb2 = new StringBuilder("hi");
+
+        long startTime2 = System.currentTimeMillis();
+
+        for(int i=1; i<100000; i++){
+            sb2.append("a");
+        }
+
+        long endTime2 = System.currentTimeMillis();
+
+        System.out.println("for StringBuilder it takes " + (endTime2 - startTime2) + " milliseconds");
 
     }
 }
